@@ -1,0 +1,592 @@
+/* 
+-made by kino 
+-Please dont claim as yours
+-Feel free to use it in any type of projects!*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&family=Poppins:wght@400;500;600;700&family=Staatliches&family=Oxygen:wght@700&family=Lobster&family=Ubuntu:wght@400;500;700&family=Fredoka:wght@300&family=Overpass:wght@200&display=swap');
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: #121212;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: #e8ffff;
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px -2px rgba(0,0,0,0.25);
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+html{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body{
+  background-color: #000;
+  height: 230vh;
+  overflow-x: hidden;
+}
+
+
+
+
+/*=================================================================================
+================================nav=====================================                         
+===================================================================================*/
+
+
+
+.name h5:hover{
+    color: #81b5ff;
+    cursor:pointer;
+  }
+  
+  
+  .name{
+    transition: all 0.3s ease;
+  }
+  
+  .name h5{
+    user-select: none;
+    transition: all 0.3s ease;
+    left:6%;
+    position: absolute;
+    top: 12%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 60px;
+    color: #fff;
+    display: block;
+    font-weight: 900;
+  
+  }
+  
+  .max-width {
+    padding-left: 57rem;
+    cursor: pointer;
+  }
+  
+  .navbar {
+    user-select: none;
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    padding: 35px 0;
+    font-family: 'Fredoka', sans-serif;
+    transition: all 0.3s ease;
+    z-index: 99999;
+    text-decoration: none;
+  
+  }
+  
+  .navbar.sticky{
+    position:fixed;
+    
+  }
+  
+  .navbar .menu li {
+    list-style: none;
+    display: inline-block;
+  }
+  .navbar .menu li a {
+    display: block;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+  }
+  .navbar .menu li a:hover {
+    color: #81b5ff;
+  }
+  .navbar.sticky .menu li a:hover {
+    color: #fff;
+  }
+  
+  .menu-btn {
+    color: #fff;
+    font-weight:lighter;
+    cursor: pointer;
+    display: none;
+    text-decoration: none;
+  }
+
+
+/*=================================================================================
+================================main=====================================                         
+===================================================================================*/
+
+.home {
+    left: 12rem;
+    position: absolute;
+    width: 80%;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .uhm {
+    margin-top: 20px;
+  }
+  .home .text-1 {
+    user-select: none;
+    cursor: default;
+    margin-top: 190px;
+    font-size: 1.885em;
+    margin-bottom: -12px;
+  }
+  .home  .text-2 {
+    user-select: none;
+    cursor: default;
+    font-size: 6.5em;
+    font-weight: 600;
+    margin-left: -3px;
+  }
+  .home .text-3 {
+    user-select: none;
+    cursor: default;
+    font-size: 2.275em;
+    margin-top: -12px;
+  
+  }
+  .home .home-content .text-3 span {
+    color: #81b5ff;
+    font-weight: 500;
+  }
+  
+  .sup a:hover{
+    color: #000;
+    background-color: #ffffff;
+    box-shadow: 0 0 30px #fff, 0 0 20px #fff, 0 0 40px #fff;
+    width: 135px;
+    height: 69px;
+  }
+  
+  
+  .sup a:hover span{
+    transition: all 0.001 none;
+  opacity: 0;
+  }
+  
+  .sup {
+    position: absolute;
+    text-align: center;
+  }
+  
+  .sup a{
+    user-select: none;
+    padding-top: 25px;
+    width: 135px;
+    height: 69px;
+    animation-delay: 0ms;
+    border-radius: 5px;
+      transition: all 0.4s ease;
+      position: absolute;
+      top: 450px;
+      left: 17rem;
+      transform: translate(-50%,-50%);
+      color:#fff;
+      letter-spacing:2px;
+      text-transform:uppercase;
+      text-decoration:none;
+      background-color: #3030305b;
+      overflow:hidden;
+      font-family: 'Ubuntu Mono', monospace;
+      font-weight:bold;
+      font-size: 13px;
+      justify-content: center;
+      }
+      .sup a:before
+      {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      bottom: 2px;
+      width: 50px;
+      }
+      .sup a span:nth-child(1)
+      {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(to right,#afafaf,#fff);
+      animation: animate1 2s linear infinite;
+      }
+      @keyframes animate1
+      {
+       0%
+       {
+         transform:translateX(-100%);
+       
+       }
+       100%
+       {
+         transform:translateX(100%);
+       
+       }
+      }
+      .sup a span:nth-child(2)
+      {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(to bottom,#afafaf,#fff);
+      animation: animate2 2s linear infinite;
+      animation-delay: 1s;
+      }
+      @keyframes animate2 
+      {
+       0%
+       {
+         transform:translateY(-100%);
+       
+       }
+       100%
+       {
+         transform:translateY(100%);
+       
+       }
+      }
+      .sup a span:nth-child(3)
+      {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(to left,#afafaf,#fff);
+      animation: animate3 2s linear infinite;
+      }
+      @keyframes animate3
+      {
+       0%
+       {
+         transform:translateX(100%);
+       
+       }
+       100%
+       {
+         transform:translateX(-100%);
+       
+       }
+      }
+      .sup a span:nth-child(4)
+      {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(to top,#afafaf,#fff);
+      animation: animate4 2s linear infinite;
+      animation-delay: 1s;
+      }
+      @keyframes animate4 
+      {
+       0%
+       {
+         transform:translateY(100%);
+       
+       }
+       100%
+       {
+         transform:translateY(-100%);
+       
+       }
+      }
+  
+/*=================================================================================
+================================ah yes responsiveness bgjhbj2hbg2k================================                     
+===================================================================================*/
+
+      @media (max-width: 1115px){
+        html{
+          font-size: 10px;}
+          .home-content{
+            font-size: 16px;
+          }
+        
+      }
+
+      @media (max-width: 1325px){
+        html{
+          font-size: 15px;}
+          .home-content{
+            font-size: 16px;
+          }
+        
+      }
+      
+      @media (max-width: 1269px){
+        html{
+          font-size: 14px;}
+          .home-content{
+            font-size: 16px;
+          }
+        
+      }
+      
+      @media (max-width: 1212px){
+        html{
+          font-size: 13px;}
+          .home-content{
+            font-size: 16px;
+          }
+        
+  
+      }
+      @media (max-width: 1154px){
+        html{
+          font-size: 12px;}
+          .home-content{
+            font-size: 16px;
+          }
+      }
+
+      @media (max-width: 1098px){
+        html{
+          font-size: 11px;}
+          .home-content{
+            font-size: 16px;
+          }
+      }
+
+      @media (max-width: 1039px)
+      {
+
+        html{
+          font-size: 10px;
+        }
+        .home-content{
+          font-size: 16px;
+        }
+      }
+      
+      @media (max-width: 982px)
+      {
+
+        html{
+          font-size: 9px;
+        }
+        .home-content{
+          font-size: 16px;
+        }
+      }
+      
+      @media (max-width: 950px) {
+
+        .home-content{
+          font-size: 16px;
+        }
+        .menu-btn {
+          display: block;
+          z-index: 999;
+          position: absolute;
+          right: 30px;
+          top: 30px;
+        }
+        .menu-btn i.active:before {
+          content: "\f00d";
+        }
+        .navbar .menu {
+          position: fixed;
+          height: 100vh;
+          width: 100%;
+          left: -100%;
+          top: 0;
+          background: #121212;
+          text-align: center;
+          padding-top: 80px;
+          transition: all 0.3s ease;
+        }
+        .navbar .menu.active {
+          left: 0;
+        }
+        .navbar .menu li {
+          display: block;
+        }
+        .navbar .menu li a {
+          display: block;
+          display: inline-block;
+          margin: 20px 0;
+          font-size: 25px;
+        }
+      }
+      
+
+      @media (max-width: 500px) {
+        html{
+          font-size: 9px;
+        }
+
+        .sup a{
+          left: 12rem;
+        }
+      }
+/*=================================================================================
+================================idek anymore================================                     
+===================================================================================*/
+
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: #81b5ff;
+    right: 30px;
+    bottom: 50px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  .scroll-up-btn.show {
+    bottom: 50px;
+    opacity: 1;
+    pointer-events: auto;
+    position: fixed;
+  }
+  
+
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    z-index: 9999;
+    background:#161623;
+   }
+   
+   .loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .text{
+    font-size: 80px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(248, 187, 187);
+    margin-bottom: 25px;
+    font-family: monospace;
+  }
+  .add{
+    animation: animate .7s ease-in-out .1s;
+  }
+  @keyframes animate {
+    0%{
+      opacity: 1;
+    }
+    50%{
+      opacity: 0.2;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  .progress-bar{
+    width: 406px;
+    height: 22px;
+    background: #111;
+    border-radius: 13px;
+    padding: 3px;
+    box-sizing: border-box;
+  }
+  .progress{
+    width: 203px;
+    height: 16px;
+    background: #f60d54;
+    border-radius: 13px;
+  }
+
+
+  
+  
+  
+  .longfazers {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .longfazers span {
+    position: absolute;
+    height: 4px;
+    width: 20%;
+    background: #22b4b7;
+  }
+  .longfazers span:nth-child(1) {
+    top: 20%;
+    animation: lf 0.6s linear infinite;
+    animation-delay: -5s;
+  }
+  .longfazers span:nth-child(2) {
+    top: 40%;
+    animation: lf2 0.8s linear infinite;
+    animation-delay: -1s;
+  }
+  .longfazers span:nth-child(3) {
+    top: 60%;
+    animation: lf3 0.6s linear infinite;
+  }
+  .longfazers span:nth-child(4) {
+    top: 80%;
+    animation: lf4 0.5s linear infinite;
+    animation-delay: -3s;
+  }
+  @keyframes lf {
+    0% {
+      left: -200%;
+   }
+    100% {
+      left: 200%;
+      opacity: 0;
+   }
+  }
+  @keyframes lf2 {
+    0% {
+      left: -200%;
+   }
+    100% {
+      left: 200%;
+      opacity: 0;
+   }
+  }
+  @keyframes lf3 {
+    0% {
+      left: -200%;
+   }
+    100% {
+      left: 100%;
+      opacity: 0;
+   }
+  }
+  @keyframes lf4 {
+    0% {
+      left: -200%;
+   }
+    100% {
+      left: 100%;
+      opacity: 0;
+   }
+  }
